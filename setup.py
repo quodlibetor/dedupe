@@ -9,7 +9,7 @@ import os
 with open(os.path.join(os.path.dirname(__file__),"README.rst"), 'r') as fh:
     long_desc = fh.read()
 
-VERSION = "0.1"
+VERSION = "0.1.1"
 
 setup(name="dedupe",
       version=VERSION,
@@ -18,6 +18,7 @@ setup(name="dedupe",
       author="Brandon W Maister",
       author_email="quodlibetor@gmail.com",
       url="http://bitbucket.org/quodlibetor/dedupe",
+      py_modules=['dedupe', 'distribute_setup', 'setup'],
       entry_points= {'console_scripts': [
             'dedupe = dedupe:main'
             ]},
@@ -30,7 +31,7 @@ setup(name="dedupe",
         "Development Status :: 3 - Alpha",
         "Environment :: Console",
         "Intended Audience :: End Users/Desktop",
-        "License :: OSI Approved :: GNU General Public License (LGPL)",
+        "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
         "Operating System :: OS Independent",
         ]
       )
