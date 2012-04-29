@@ -1,6 +1,7 @@
 *.pyc
 .ropeproject
 *egg-info*
+distribute*
 build
 dist
 MANIFEST
