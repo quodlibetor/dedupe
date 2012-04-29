@@ -1,0 +1,17 @@
+-*- mode: org -*-
+
+* Features:
+
+*** Add the ability to choose which attributes count in the duplicate algorithm
+
+***** Include filename in it
+
+      if no artist tag is present, use the filename instead
+
+*** Add the ability to loosen the requirements for artist/title matching
+
+    case-insensitivity seems important, as does ignoring leading "the"s
+
+*** Add the ability to modify the metadata of music files in-place
+
+    lots of files are missing tags

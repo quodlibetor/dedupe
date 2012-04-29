@@ -1,0 +1,6 @@
+*.pyc
+.ropeproject
+*egg-info*
+build
+dist
+MANIFEST
