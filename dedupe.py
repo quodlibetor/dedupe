@@ -168,7 +168,7 @@ def main(args):
                 add_song(songs, dups, os.path.join(dirpath, f))
 
     for dupstring, songlist in dups.iteritems():
-        dups[dupstring] = sorted(songlist, key=lambda s: s.bitrate)
+        dups[dupstring] = sorted(songlist, key=lambda s: s.bitrate, reverse=True)
 
 
     print "\n"+("-"*70)+"\nDuplicates:"
@@ -202,7 +202,7 @@ def parse_args():
 
     return parser.parse_args()
 
-def main():
+def wrap_main():
     args = parse_args()
     args.root = [os.path.expanduser(root) for root in args.root]
     if args.root:
@@ -240,4 +240,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    wrap_main()
