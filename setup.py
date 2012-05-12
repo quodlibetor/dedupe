@@ -9,7 +9,7 @@ import os
 with open(os.path.join(os.path.dirname(__file__),"README.rst"), 'r') as fh:
     long_desc = fh.read()
 
-VERSION = "0.1.1"
+VERSION = "0.1.2"
 
 setup(name="dedupe",
       version=VERSION,
@@ -32,6 +32,5 @@ setup(name="dedupe",
         "Environment :: Console",
         "Intended Audience :: End Users/Desktop",
         "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
-        "Operating System :: OS Independent",
         ]
       )

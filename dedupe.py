@@ -6,7 +6,7 @@ import sys
 import argparse
 import mutagen
 
-VERSION = "0.1.1"
+VERSION = "0.1.2"
 
 class NotASong(Exception):
     pass
